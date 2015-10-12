@@ -2,18 +2,20 @@ package com.cisc181.core;
 
 import java.util.Date;
 
+import com.cisc181.eNums.eStaffTitle;
+
 public class Staff extends Employee {
 
-	 private String Title;
+	 private eStaffTitle Title;
 
-	   public Staff(String title){
+	   public Staff(eStaffTitle title){
 	        this.Title = title;
 	    }
 
-	    public void setTitle(String title){
+	    public void setTitle(eStaffTitle title){
 	        this.Title = title;
 	    }
-	    public String getTitle(){
+	    public eStaffTitle getTitle(){
 	        return this.Title;
 	    }
 
@@ -23,7 +25,7 @@ public class Staff extends Employee {
 	public Staff(String FirstName, String MiddleName, String LastName,
 			Date DOB, String Address, String Phone_number, String Email,
 			String officeHours, int rank, double salary, Date hireDate,
-			String Title) 
+			eStaffTitle Title) 
 	
 	{
 		super(FirstName, MiddleName, LastName, DOB, Address, Phone_number,
